@@ -1,0 +1,17 @@
+{
+  "checkpoint": "/home/rou/Projects/PyAnimate/models/laya/mario/runs/mario_laya_v6_dagger",
+  "threshold": 0.5,
+  "hold_decisions": 4,
+  "stuck_threshold": 8,
+  "stage": "SuperMarioBros-1-1-v0",
+  "action_repeat": 4,
+  "outcome": "FLAG",
+  "final_distance": 3161,
+  "final_time_used": 120,
+  "total_frames": 2552,
+  "total_decisions": 601,
+  "fps": 60,
+  "video_duration_s": 42.53,
+  "wall_seconds_to_record": 6.3,
+  "recorded_at": "2026-09-21T15:09:17"
+}

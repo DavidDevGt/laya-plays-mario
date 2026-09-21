@@ -1,0 +1,48 @@
+{
+  "policy": "laya",
+  "checkpoint": "models/laya/mario/runs/mario_laya_v4_dagger",
+  "n_episodes": 3,
+  "avg_distance": 373.3333333333333,
+  "flag_rate": 0.0,
+  "results": [
+    {
+      "flag_get": false,
+      "is_dead": true,
+      "distance": 296,
+      "time_left": 392,
+      "frames": 160,
+      "decisions": 40,
+      "wall_seconds": 0.6,
+      "decisions_per_sec": 64.9,
+      "stage": "SuperMarioBros-1-1-v0",
+      "episode": 0,
+      "policy": "laya"
+    },
+    {
+      "flag_get": false,
+      "is_dead": true,
+      "distance": 448,
+      "time_left": 386,
+      "frames": 288,
+      "decisions": 72,
+      "wall_seconds": 0.7,
+      "decisions_per_sec": 96.7,
+      "stage": "SuperMarioBros-4-1-v0",
+      "episode": 0,
+      "policy": "laya"
+    },
+    {
+      "flag_get": false,
+      "is_dead": true,
+      "distance": 376,
+      "time_left": 389,
+      "frames": 234,
+      "decisions": 59,
+      "wall_seconds": 0.6,
+      "decisions_per_sec": 97.3,
+      "stage": "SuperMarioBros-7-1-v0",
+      "episode": 0,
+      "policy": "laya"
+    }
+  ]
+}

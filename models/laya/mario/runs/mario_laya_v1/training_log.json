@@ -1,0 +1,80 @@
+{
+  "args": {
+    "data": "/home/rou/Projects/PyAnimate/models/laya/mario/data/teacher_rollouts_v1.jsonl",
+    "out": "/home/rou/Projects/PyAnimate/models/laya/mario/runs/mario_laya_v1",
+    "epochs": 8,
+    "batch_size": 48,
+    "lr": 0.0003,
+    "seed": 0
+  },
+  "n_train_records": 3340,
+  "n_val_records": 883,
+  "val_stages": [
+    "SuperMarioBros-4-1-v0",
+    "SuperMarioBros-7-1-v0"
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "val_loss": -0.002103660621547273,
+      "val_move_acc": 0.9626274065685164,
+      "val_jump_acc": 0.6149490373725934
+    },
+    {
+      "epoch": 1,
+      "train_loss": -0.1369474638835527,
+      "val_loss": -0.23116678638117655,
+      "val_move_acc": 0.9660249150622876,
+      "val_jump_acc": 0.8006795016987542
+    },
+    {
+      "epoch": 2,
+      "train_loss": -0.23701001786227738,
+      "val_loss": -0.28635951983077185,
+      "val_move_acc": 0.970554926387316,
+      "val_jump_acc": 0.8731596828992072
+    },
+    {
+      "epoch": 3,
+      "train_loss": -0.2584944497095421,
+      "val_loss": -0.2890054817710604,
+      "val_move_acc": 0.9728199320498301,
+      "val_jump_acc": 0.8663646659116648
+    },
+    {
+      "epoch": 4,
+      "train_loss": -0.2713477050619466,
+      "val_loss": -0.2881917804479599,
+      "val_move_acc": 0.9818799546998868,
+      "val_jump_acc": 0.8493771234428086
+    },
+    {
+      "epoch": 5,
+      "train_loss": -0.2969873665166753,
+      "val_loss": -0.2988958954811096,
+      "val_move_acc": 0.9728199320498301,
+      "val_jump_acc": 0.8640996602491506
+    },
+    {
+      "epoch": 6,
+      "train_loss": -0.2790935341069209,
+      "val_loss": -0.29283095257622854,
+      "val_move_acc": 0.9886749716874292,
+      "val_jump_acc": 0.8754246885617214
+    },
+    {
+      "epoch": 7,
+      "train_loss": -0.30935043791042904,
+      "val_loss": -0.3218107053211757,
+      "val_move_acc": 0.9932049830124575,
+      "val_jump_acc": 0.8810872027180068
+    },
+    {
+      "epoch": 8,
+      "train_loss": -0.310274892992207,
+      "val_loss": -0.31939201269830975,
+      "val_move_acc": 0.9943374858437146,
+      "val_jump_acc": 0.8799546998867497
+    }
+  ]
+}

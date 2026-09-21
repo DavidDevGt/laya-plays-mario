@@ -1,0 +1,80 @@
+{
+  "args": {
+    "data": "/home/rou/Projects/PyAnimate/models/laya/mario/data/teacher_rollouts_v1.jsonl",
+    "out": "models/laya/mario/runs/mario_laya_v2_jumponly",
+    "epochs": 8,
+    "batch_size": 48,
+    "lr": 0.0003,
+    "seed": 0
+  },
+  "n_train_records": 3340,
+  "n_val_records": 883,
+  "val_stages": [
+    "SuperMarioBros-4-1-v0",
+    "SuperMarioBros-7-1-v0"
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "val_loss": 0.2956928866250174,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.6149490373725934
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.1896275026757004,
+      "val_loss": -0.07840545156172343,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8505096262740657
+    },
+    {
+      "epoch": 2,
+      "train_loss": -0.043770191329531374,
+      "val_loss": -0.05678750255278179,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8561721404303511
+    },
+    {
+      "epoch": 3,
+      "train_loss": -0.08963689965062908,
+      "val_loss": -0.12967883396361554,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8629671574178935
+    },
+    {
+      "epoch": 4,
+      "train_loss": -0.12720681431570224,
+      "val_loss": -0.1875962737415518,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8856172140430351
+    },
+    {
+      "epoch": 5,
+      "train_loss": -0.17987905169970222,
+      "val_loss": -0.1955312384026391,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8969422423556059
+    },
+    {
+      "epoch": 6,
+      "train_loss": -0.15520087545571318,
+      "val_loss": -0.18533447105437517,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8810872027180068
+    },
+    {
+      "epoch": 7,
+      "train_loss": -0.17101597736722657,
+      "val_loss": -0.11224509802247797,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8674971687429218
+    },
+    {
+      "epoch": 8,
+      "train_loss": -0.20183874127854193,
+      "val_loss": -0.17885126705680574,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.8754246885617214
+    }
+  ]
+}

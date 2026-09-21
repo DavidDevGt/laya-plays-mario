@@ -1,0 +1,129 @@
+{
+  "args": {
+    "data": "models/laya/mario/data/v4_final.jsonl",
+    "out": "models/laya/mario/runs/mario_laya_v5_final",
+    "epochs": 15,
+    "batch_size": 48,
+    "lr": 0.0003,
+    "seed": 0
+  },
+  "n_train_records": 7195,
+  "n_val_records": 978,
+  "val_stages": [
+    "SuperMarioBros-4-1-v0",
+    "SuperMarioBros-7-1-v0"
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "val_loss": 0.030271922005340457,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.843558282208589
+    },
+    {
+      "epoch": 1,
+      "train_loss": -0.028187055682453017,
+      "val_loss": -0.19861566554754972,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9141104294478528
+    },
+    {
+      "epoch": 2,
+      "train_loss": -0.09673789144959301,
+      "val_loss": -0.20787273161113262,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9141104294478528
+    },
+    {
+      "epoch": 3,
+      "train_loss": -0.11017047832947961,
+      "val_loss": -0.2055955808609724,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9141104294478528
+    },
+    {
+      "epoch": 4,
+      "train_loss": -0.12663193482284746,
+      "val_loss": -0.20465148892253637,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9192229038854806
+    },
+    {
+      "epoch": 5,
+      "train_loss": -0.13743029419856612,
+      "val_loss": -0.22974790260195732,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9243353783231084
+    },
+    {
+      "epoch": 6,
+      "train_loss": -0.16396371273168672,
+      "val_loss": -0.23884343914687634,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9274028629856851
+    },
+    {
+      "epoch": 7,
+      "train_loss": -0.18489200784359128,
+      "val_loss": -0.2441822625696659,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9284253578732107
+    },
+    {
+      "epoch": 8,
+      "train_loss": -0.1982542836650585,
+      "val_loss": -0.2503944132477045,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9263803680981595
+    },
+    {
+      "epoch": 9,
+      "train_loss": -0.20859905391388261,
+      "val_loss": -0.27142591029405594,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9294478527607362
+    },
+    {
+      "epoch": 10,
+      "train_loss": -0.22651365073242535,
+      "val_loss": -0.25995340198278427,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9253578732106339
+    },
+    {
+      "epoch": 11,
+      "train_loss": -0.22606456734240055,
+      "val_loss": -0.23999755457043648,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9284253578732107
+    },
+    {
+      "epoch": 12,
+      "train_loss": -0.23972906348605952,
+      "val_loss": -0.19068243354558945,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9304703476482618
+    },
+    {
+      "epoch": 13,
+      "train_loss": -0.24816144499306877,
+      "val_loss": -0.22531044576317072,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9325153374233128
+    },
+    {
+      "epoch": 14,
+      "train_loss": -0.25289926647519073,
+      "val_loss": -0.26627702452242374,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9243353783231084
+    },
+    {
+      "epoch": 15,
+      "train_loss": -0.2660697938750188,
+      "val_loss": -0.2307061180472374,
+      "val_move_acc": NaN,
+      "val_jump_acc": 0.9325153374233128
+    }
+  ]
+}

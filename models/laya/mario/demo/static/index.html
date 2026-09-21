@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Laya plays Super Mario Bros</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <span class="dot"></span>
+      LAYA CONTROLLER <span class="sub">— live replay of a real control loop, not a staged demo</span>
+    </div>
+    <div id="outcome-badge" class="badge">loading…</div>
+  </header>
+
+  <main>
+    <section class="stage">
+      <video id="video" controls autoplay muted playsinline></video>
+      <div class="stage-caption">
+        <span id="checkpoint-name">—</span> ·
+        threshold=<span id="cfg-threshold">—</span>,
+        hold=<span id="cfg-hold">—</span>,
+        stuck_threshold=<span id="cfg-stuck">—</span>
+      </div>
+    </section>
+
+    <aside class="panel">
+
+      <div class="block">
+        <h2>JUMP PROBABILITY</h2>
+        <div class="bar-row">
+          <span class="bar-label">NO</span>
+          <div class="bar-track"><div id="bar-no" class="bar-fill bar-no"></div></div>
+          <span id="p-no" class="bar-value">–</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">YES</span>
+          <div class="bar-track"><div id="bar-yes" class="bar-fill bar-yes"></div></div>
+          <span id="p-yes" class="bar-value">–</span>
+        </div>
+        <div id="decision-source" class="decision-source">—</div>
+        <div id="confidence-row" class="confidence-row">confidence (computed, |P−0.5|×2): <span id="confidence-val">–</span></div>
+      </div>
+
+      <div class="block">
+        <h2>SELECTED ACTION</h2>
+        <div id="selected-action" class="selected-action">—</div>
+        <div class="gamepad-row">
+          <svg id="gamepad" viewBox="0 0 220 120" class="gamepad">
+            <rect x="4" y="4" width="212" height="112" rx="18" class="gp-body"/>
+            <!-- D-pad -->
+            <rect id="btn-left"  x="20" y="46" width="20" height="20" rx="3" class="gp-btn"/>
+            <rect id="btn-right" x="60" y="46" width="20" height="20" rx="3" class="gp-btn"/>
+            <rect x="40" y="26" width="20" height="20" rx="3" class="gp-btn gp-inactive"/>
+            <rect x="40" y="66" width="20" height="20" rx="3" class="gp-btn gp-inactive"/>
+            <rect x="40" y="46" width="20" height="20" class="gp-dpad-center"/>
+            <!-- Face buttons: B, A -->
+            <circle id="btn-B" cx="150" cy="66" r="14" class="gp-btn gp-round"/>
+            <circle id="btn-A" cx="184" cy="46" r="14" class="gp-btn gp-round"/>
+            <text x="150" y="70" class="gp-text">B</text>
+            <text x="184" y="50" class="gp-text">A</text>
+            <text x="30" y="60" class="gp-text">◀</text>
+            <text x="70" y="60" class="gp-text">▶</text>
+          </svg>
+          <div class="button-list" id="button-list">—</div>
+        </div>
+        <div class="hold-info" id="hold-info"></div>
+      </div>
+
+      <div class="block">
+        <h2>GAME STATE <span class="src-tag">(from mario/state.py, same extractor the model sees)</span></h2>
+        <div class="kv-grid">
+          <div>Mario X</div><div id="s-x">–</div>
+          <div>Mario Y</div><div id="s-y">–</div>
+          <div>Velocity X</div><div id="s-vx">–</div>
+          <div>Velocity Y</div><div id="s-vy">–</div>
+          <div>On ground</div><div id="s-ground">–</div>
+          <div>Gap ahead</div><div id="s-gap">–</div>
+          <div>Nearest enemy Δx</div><div id="s-enemy-dx">–</div>
+          <div>Nearest enemy Δy</div><div id="s-enemy-dy">–</div>
+          <div>Enemy type</div><div id="s-enemy-type">–</div>
+          <div>Enemies on screen</div><div id="s-enemies">–</div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>PERFORMANCE</h2>
+        <div class="kv-grid">
+          <div>Game time used</div><div id="m-time">–</div>
+          <div>Distance</div><div id="m-distance">–</div>
+          <div>Decision #</div><div id="m-decision">– / –</div>
+          <div>Model latency</div><div id="m-latency">–</div>
+        </div>
+      </div>
+
+    </aside>
+  </main>
+
+  <footer>
+    Every number on this page is read from <code>episode.jsonl</code>, produced by actually running
+    <code>record_demo.py</code> against the real <code>mario_laya_v6_dagger</code> checkpoint and the
+    real controller loop (<code>threshold / hold_decisions / stuck_threshold</code>) — not typed in by hand.
+    Move is hardcoded "RIGHT" in the controller (not a model output); the final config does not hold
+    the run button, so B is never pressed in this replay.
+  </footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

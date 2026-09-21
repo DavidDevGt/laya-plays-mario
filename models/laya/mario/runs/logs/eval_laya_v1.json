@@ -1,0 +1,35 @@
+{
+  "policy": "laya",
+  "checkpoint": "models/laya/mario/runs/mario_laya_v1",
+  "n_episodes": 2,
+  "avg_distance": 641.5,
+  "flag_rate": 0.0,
+  "results": [
+    {
+      "flag_get": false,
+      "is_dead": false,
+      "distance": 0,
+      "time_left": 200,
+      "frames": 4000,
+      "decisions": 1000,
+      "wall_seconds": 14.5,
+      "decisions_per_sec": 68.8,
+      "stage": "SuperMarioBros-1-1-v0",
+      "episode": 0,
+      "policy": "laya"
+    },
+    {
+      "flag_get": false,
+      "is_dead": true,
+      "distance": 1283,
+      "time_left": 348,
+      "frames": 1056,
+      "decisions": 264,
+      "wall_seconds": 3.8,
+      "decisions_per_sec": 69.8,
+      "stage": "SuperMarioBros-4-1-v0",
+      "episode": 0,
+      "policy": "laya"
+    }
+  ]
+}
