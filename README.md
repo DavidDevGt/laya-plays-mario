@@ -5,6 +5,10 @@ non-autoregressive "decision model" originally built for typed business classifi
 triage, ticket routing) — into a game-playing control policy for Super Mario Bros (NES), and
 pushing it toward a speedrun.
 
+![Laya playing Super Mario Bros, with a live decision panel showing the model's real P(jump), the selected action, game state, and performance metrics](models/laya/mario/runs/videos/laya_demo_panel.gif)
+
+*Live-synced replay: every number in the side panel is read from the same control loop actually playing the game — not staged. See [`models/laya/mario/demo/`](models/laya/mario/demo/) to run it yourself.*
+
 **Full writeup, results table, and conclusions: [`models/laya/mario/FINAL_REPORT.md`](models/laya/mario/FINAL_REPORT.md).**
 Every intermediate hypothesis (including the ones that failed) is logged in
 [`models/laya/mario/runs/logs/`](models/laya/mario/runs/logs/).
